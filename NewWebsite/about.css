@@ -1,0 +1,93 @@
+*{
+  /*
+  * Para que o navegador faça reset do tamanho
+  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+html.body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: rgb(160, 159, 159);
+}
+
+
+body {
+  background-color: rgb(160, 159, 159);
+}
+
+.menu {
+  padding-top: 50px;
+  width: 40%;
+  text-align: left;
+}
+
+.menu a{
+  color: rgb(63, 63, 146);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff6c22;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+.image {
+  position: fixed;
+  bottom: -230px;
+  right: -230px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-image: url("C:\Users\marti\Desktop\TentativasProjetos\NewWebsite\images\logo_transparent 500px.png");
+}
+
+.text-about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-about-me p{
+  font-size: 15px;
+  margin-top: 60px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  max-width: 800px;
+}
+
+.text-about-me img{
+  width: 150px;
+  height: 150px;
+  margin-top: 100px;
+  border-radius: 50%;
+  border: 5px solid rgb(63, 63, 146);
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,108 @@
+*{
+  /*
+  * Para que o navegador faça reset do tamanho
+  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+html.body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: rgb(160, 159, 159);
+}
+
+
+body {
+  background-color: rgb(160, 159, 159);
+}
+
+.menu {
+  padding-top: 50px;
+  width: 40%;
+  text-align: left;
+}
+
+.menu a{
+  color: rgb(63, 63, 146);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff6c22;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-column {
+  flex-basis: 25%;
+  background-color: rgb(63, 63, 146);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 170px;
+  text-align: center;
+}
+
+.service-column:hover {
+  transform: translateY(-5px);
+}
+
+.service-column img{
+  align-content: center;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,128 @@
+*{
+  /*
+  * Para que o navegador faça reset do tamanho
+  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 1300px;
+  margin:0 auto;
+  padding:0 2%;
+
+}
+
+html.body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: rgb(160, 159, 159);
+}
+
+body {
+  background-color: rgb(160, 159, 159);
+}
+
+header {
+  height: 200px;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 60%;
+}
+
+.menu {
+  padding-top: 50px;
+  width: 40%;
+  text-align: right;
+}
+
+.menu a{
+  color: rgb(63, 63, 146);
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff6c22;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+section.about {
+  height: calc(100% - 200px);
+  position: relative;
+}
+
+.extras {
+  position: fixed;
+  bottom: -150px;
+  right: -150px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: rgb(63, 63, 146);
+}
+
+.social-media {
+  position: absolute;
+  right: 210px;
+  top: 200px;
+}
+
+.social-media a{
+  display: flex;
+  align-items: right;
+  margin-right: 10px;
+}
+
+.social-media img{
+  /* Para ficarem uns por baixo */
+  display: block; 
+  width: 40px;
+  margin:20px 0;
+}
+
+.text-about {
+  margin-top: 100px;
+}
+
+.text-about {
+  font-size: 30px;
+}
+
+.text-about p{
+  margin: 20px 0;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 800px;
+}
+
+.text-about button{
+  border: 0;
+  background-color: rgb(63, 63, 146);
+  color: black;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}

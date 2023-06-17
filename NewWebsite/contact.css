@@ -1,0 +1,129 @@
+*{
+  /*
+  * Para que o navegador faça reset do tamanho
+  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 1300px;
+  margin:0 auto;
+  margin-left: 200px;
+  padding:0 2%;
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+html.body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: rgb(160, 159, 159);
+}
+
+body {
+  background-color: rgb(160, 159, 159);
+}
+
+.menu {
+  padding-top: 50px;
+  width: 40%;
+  text-align: left;
+}
+
+.menu a{
+  color: rgb(63, 63, 146);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff6c22;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contact-form {
+  margin-top: 20px;
+  width: 300px;
+  margin-left: 100px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(212, 212, 212);
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: rgb(63, 63, 146);
+}
+
+.email-info {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.email-box {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: slide-in 2s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.email-info p {
+  margin: 5px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
